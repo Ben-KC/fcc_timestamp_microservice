@@ -7,7 +7,7 @@
     
 ###Example:
 * https://fcc-api-projects-ben24c.c9users.io/1234567
---OR--
+* --OR--
 * https://fcc-api-projects-ben24c.c9users.io/January 1, 1970
-Returns:
+* Returns:
 * {"unix":1234567,"natural":"January 1, 1970"}
