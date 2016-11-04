@@ -28,8 +28,7 @@ app.get('/:date', function(req, res) {
     //store request
     var input = req.params.date;
     var date;
-//TODO handle incorrect request (return nulls) and write an index.html
-    //check format
+//TODO write an index.html
     if(parseInt(input)){
         date = new Date(parseInt(input));       
     } else {
@@ -38,7 +37,7 @@ app.get('/:date', function(req, res) {
 
     var dateObj = {
         unix: date.getTime(),
-        natural: months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear()
+        natural: date.getTime() ? months[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear() : null
     }
     
     res.send(JSON.stringify(dateObj));
