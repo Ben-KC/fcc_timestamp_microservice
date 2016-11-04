@@ -19,16 +19,14 @@ var months = [
 ]
 
 //home page
-app.get('/', function(req, res) {
-    
-});
+app.use('/', express.static('public'));
 
 //handle the get request
 app.get('/:date', function(req, res) {
     //store request
     var input = req.params.date;
     var date;
-//TODO write an index.html
+    
     if(parseInt(input)){
         date = new Date(parseInt(input));       
     } else {
