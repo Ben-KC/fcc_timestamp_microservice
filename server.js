@@ -28,10 +28,10 @@ app.get('/:date', function(req, res) {
     //store request
     var input = req.params.date;
     var date;
-//TODO handle incorrect request (return nulls) and write an index.html    
+//TODO handle incorrect request (return nulls) and write an index.html
     //check format
     if(parseInt(input)){
-        date = new Date(parseInt(input)*1000);       
+        date = new Date(parseInt(input));       
     } else {
         date = new Date(input);
     }
