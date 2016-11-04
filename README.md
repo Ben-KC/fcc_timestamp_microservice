@@ -6,8 +6,8 @@
 2. The app will return both the unix timestamp and natural language date (or nulls if the passed string does not fulfill the above requirements)
     
 ###Example:
-https://fcc-api-projects-ben24c.c9users.io/1234567
+* https://fcc-api-projects-ben24c.c9users.io/1234567
 --OR--
-https://fcc-api-projects-ben24c.c9users.io/January 1, 1970
+* https://fcc-api-projects-ben24c.c9users.io/January 1, 1970
 Returns:
-{"unix":1234567,"natural":"January 1, 1970"}
+* {"unix":1234567,"natural":"January 1, 1970"}
