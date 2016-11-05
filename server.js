@@ -19,7 +19,7 @@ var months = [
 ]
 
 //for heroku compatibility
-app.set('port', (process.env.PORT || 8080))
+var port = process.env.PORT || 8080;
 
 //home page
 app.use('/', express.static('public'));
@@ -44,4 +44,4 @@ app.get('/:date', function(req, res) {
     res.send(JSON.stringify(dateObj));
 });
 
-app.listen(app.get(port);
+app.listen(port);
