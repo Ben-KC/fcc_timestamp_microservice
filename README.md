@@ -6,8 +6,8 @@
 2. The app will return both the unix timestamp and natural language date (or nulls if the passed string does not fulfill the above requirements)
     
 ###Example:
-* https://fcc-api-projects-ben24c.c9users.io/1234567
+* [https://cryptic-headland-74336.herokuapp.com/603504000000](https://cryptic-headland-74336.herokuapp.com/603504000000)
 * --OR--
-* https://fcc-api-projects-ben24c.c9users.io/January 1, 1970
+* [https://cryptic-headland-74336.herokuapp.com/February 15, 1989](https://cryptic-headland-74336.herokuapp.com/February 15, 1989)
 * Returns:
-* {"unix":1234567,"natural":"January 1, 1970"}
+* {"unix":603504000000,"natural":"February 15, 1989"}
